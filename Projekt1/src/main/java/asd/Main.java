@@ -41,10 +41,6 @@ public class Main extends JFrame {
                 s.setVisible(true);
                 s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 break;
-            case 4:
-                break;
-            case 5:
-                break;
             default:
                 System.out.println("Niepoprawna wartość");
                 break;
