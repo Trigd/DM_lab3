@@ -9,3 +9,14 @@ C:\Users\matus\Desktop\C#\lab7v1\lab7v1\obj\Debug\lab7v1.csproj.GenerateResource
 C:\Users\matus\Desktop\C#\lab7v1\lab7v1\obj\Debug\lab7v1.csproj.CoreCompileInputs.cache
 C:\Users\matus\Desktop\C#\lab7v1\lab7v1\obj\Debug\lab7v1.exe
 C:\Users\matus\Desktop\C#\lab7v1\lab7v1\obj\Debug\lab7v1.pdb
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\bin\Debug\lab7v1.exe.config
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\bin\Debug\lab7v1.exe
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\bin\Debug\lab7v1.pdb
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.csproj.AssemblyReference.cache
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.csproj.SuggestedBindingRedirects.cache
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.Form1.resources
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.Properties.Resources.resources
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.csproj.GenerateResource.cache
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.csproj.CoreCompileInputs.cache
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.exe
+C:\Users\matus\Desktop\C#\lab5-7\lab7v1\obj\Debug\lab7v1.pdb

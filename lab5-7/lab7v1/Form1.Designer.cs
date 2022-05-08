@@ -50,6 +50,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -57,6 +58,12 @@
             this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.button26 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -74,18 +81,24 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.OtwieranieObrazka = new System.Windows.Forms.OpenFileDialog();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -94,14 +107,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.button30);
+            this.panel1.Controls.Add(this.button29);
             this.panel1.Controls.Add(this.button25);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.button8);
@@ -121,7 +135,7 @@
             // button25
             // 
             this.button25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button25.Location = new System.Drawing.Point(272, 12);
+            this.button25.Location = new System.Drawing.Point(276, 12);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(71, 52);
             this.button25.TabIndex = 6;
@@ -148,6 +162,7 @@
             this.button8.TabIndex = 2;
             this.button8.Text = "Obraz drugi";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Visible = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button2
@@ -230,18 +245,50 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.Controls.Add(this.chart1);
-            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 75);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(550, 686);
             this.panel2.TabIndex = 1;
             // 
+            // chart1
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
+            this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
+            this.chart1.Location = new System.Drawing.Point(0, 486);
+            this.chart1.Name = "chart1";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Color = System.Drawing.Color.Red;
+            series7.Legend = "Legend1";
+            series7.Name = "red";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Color = System.Drawing.Color.Green;
+            series8.Legend = "Legend1";
+            series8.Name = "green";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Color = System.Drawing.Color.Blue;
+            series9.Legend = "Legend1";
+            series9.Name = "blue";
+            this.chart1.Series.Add(series7);
+            this.chart1.Series.Add(series8);
+            this.chart1.Series.Add(series9);
+            this.chart1.Size = new System.Drawing.Size(550, 200);
+            this.chart1.TabIndex = 11;
+            this.chart1.Text = "chart1";
+            this.chart1.Visible = false;
+            // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(113, 122);
+            this.pictureBox4.Location = new System.Drawing.Point(124, 122);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(107, 118);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -299,14 +346,24 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel3.Controls.Add(this.button40);
             this.panel3.Controls.Add(this.richTextBox3);
+            this.panel3.Controls.Add(this.button39);
+            this.panel3.Controls.Add(this.button38);
             this.panel3.Controls.Add(this.button28);
+            this.panel3.Controls.Add(this.button37);
             this.panel3.Controls.Add(this.button27);
+            this.panel3.Controls.Add(this.button36);
             this.panel3.Controls.Add(this.richTextBox2);
+            this.panel3.Controls.Add(this.button35);
             this.panel3.Controls.Add(this.button26);
+            this.panel3.Controls.Add(this.button34);
             this.panel3.Controls.Add(this.richTextBox1);
+            this.panel3.Controls.Add(this.button33);
             this.panel3.Controls.Add(this.trackBar3);
+            this.panel3.Controls.Add(this.button32);
             this.panel3.Controls.Add(this.trackBar2);
+            this.panel3.Controls.Add(this.button31);
             this.panel3.Controls.Add(this.trackBar1);
             this.panel3.Controls.Add(this.button17);
             this.panel3.Controls.Add(this.button18);
@@ -329,6 +386,72 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(164, 686);
             this.panel3.TabIndex = 2;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox3.Location = new System.Drawing.Point(15, 454);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(129, 24);
+            this.richTextBox3.TabIndex = 25;
+            this.richTextBox3.Text = "             Kontrast 2";
+            this.richTextBox3.Visible = false;
+            // 
+            // button28
+            // 
+            this.button28.Location = new System.Drawing.Point(40, 170);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(75, 51);
+            this.button28.TabIndex = 10;
+            this.button28.Text = "Skalowanie histogramu";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Visible = false;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button27
+            // 
+            this.button27.Location = new System.Drawing.Point(40, 97);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(75, 51);
+            this.button27.TabIndex = 9;
+            this.button27.Text = "Wyrównanie histogramu";
+            this.button27.UseVisualStyleBackColor = true;
+            this.button27.Visible = false;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
+            // 
+            // richTextBox2
+            // 
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox2.Location = new System.Drawing.Point(15, 354);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(129, 24);
+            this.richTextBox2.TabIndex = 24;
+            this.richTextBox2.Text = "             Kontrast 1";
+            this.richTextBox2.Visible = false;
+            // 
+            // button26
+            // 
+            this.button26.Location = new System.Drawing.Point(40, 23);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(75, 51);
+            this.button26.TabIndex = 8;
+            this.button26.Text = "Narysuj wykres";
+            this.button26.UseVisualStyleBackColor = true;
+            this.button26.Visible = false;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Location = new System.Drawing.Point(15, 258);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(129, 24);
+            this.richTextBox1.TabIndex = 3;
+            this.richTextBox1.Text = "Transformacja potęgowa";
+            this.richTextBox1.Visible = false;
             // 
             // button17
             // 
@@ -518,87 +641,6 @@
             this.panel4.Size = new System.Drawing.Size(550, 686);
             this.panel4.TabIndex = 3;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(107, 118);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // OtwieranieObrazka
-            // 
-            this.OtwieranieObrazka.FileName = "openFileDialog1";
-            this.OtwieranieObrazka.Filter = "*.jpg | *.*";
-            this.OtwieranieObrazka.Title = "OtwieranieObrazka";
-            this.OtwieranieObrazka.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(40, 23);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(75, 51);
-            this.button26.TabIndex = 8;
-            this.button26.Text = "Narysuj wykres";
-            this.button26.UseVisualStyleBackColor = true;
-            this.button26.Visible = false;
-            this.button26.Click += new System.EventHandler(this.button26_Click);
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(40, 97);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(75, 51);
-            this.button27.TabIndex = 9;
-            this.button27.Text = "Wyrównanie histogramu";
-            this.button27.UseVisualStyleBackColor = true;
-            this.button27.Visible = false;
-            this.button27.Click += new System.EventHandler(this.button27_Click);
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(40, 170);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(75, 51);
-            this.button28.TabIndex = 10;
-            this.button28.Text = "Skalowanie histogramu";
-            this.button28.UseVisualStyleBackColor = true;
-            this.button28.Visible = false;
-            this.button28.Click += new System.EventHandler(this.button28_Click);
-            // 
-            // chart1
-            // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
-            this.chart1.Location = new System.Drawing.Point(0, 486);
-            this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Color = System.Drawing.Color.Red;
-            series7.Legend = "Legend1";
-            series7.Name = "red";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Color = System.Drawing.Color.Green;
-            series8.Legend = "Legend1";
-            series8.Name = "green";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Color = System.Drawing.Color.Blue;
-            series9.Legend = "Legend1";
-            series9.Name = "blue";
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
-            this.chart1.Size = new System.Drawing.Size(550, 200);
-            this.chart1.TabIndex = 11;
-            this.chart1.Text = "chart1";
-            this.chart1.Visible = false;
-            // 
             // chart2
             // 
             chartArea4.Name = "ChartArea1";
@@ -631,38 +673,153 @@
             this.chart2.Text = "chart2";
             this.chart2.Visible = false;
             // 
-            // richTextBox1
+            // pictureBox2
             // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Location = new System.Drawing.Point(15, 258);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(129, 24);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "Transformacja potęgowa";
-            this.richTextBox1.Visible = false;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(107, 118);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
-            // richTextBox2
+            // OtwieranieObrazka
             // 
-            this.richTextBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(15, 354);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(129, 24);
-            this.richTextBox2.TabIndex = 24;
-            this.richTextBox2.Text = "             Kontrast 1";
-            this.richTextBox2.Visible = false;
+            this.OtwieranieObrazka.FileName = "openFileDialog1";
+            this.OtwieranieObrazka.Filter = "*.jpg | *.*";
+            this.OtwieranieObrazka.Title = "OtwieranieObrazka";
+            this.OtwieranieObrazka.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
-            // richTextBox3
+            // button29
             // 
-            this.richTextBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox3.Location = new System.Drawing.Point(15, 454);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(129, 24);
-            this.richTextBox3.TabIndex = 25;
-            this.richTextBox3.Text = "             Kontrast 2";
-            this.richTextBox3.Visible = false;
+            this.button29.BackColor = System.Drawing.Color.Red;
+            this.button29.Location = new System.Drawing.Point(1074, 9);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(83, 58);
+            this.button29.TabIndex = 12;
+            this.button29.Text = "ukryj wszystko";
+            this.button29.UseVisualStyleBackColor = false;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // button30
+            // 
+            this.button30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button30.Location = new System.Drawing.Point(365, 12);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(71, 52);
+            this.button30.TabIndex = 13;
+            this.button30.Text = "Lab7";
+            this.button30.UseVisualStyleBackColor = false;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(40, 16);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(75, 46);
+            this.button31.TabIndex = 3;
+            this.button31.Text = "Roberts pionowy";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Visible = false;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button32
+            // 
+            this.button32.Location = new System.Drawing.Point(40, 68);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(75, 46);
+            this.button32.TabIndex = 4;
+            this.button32.Text = "Roberts poziomy";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Visible = false;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(40, 120);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(75, 46);
+            this.button33.TabIndex = 5;
+            this.button33.Text = "Prewitt pionowy";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Visible = false;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(40, 172);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(75, 46);
+            this.button34.TabIndex = 6;
+            this.button34.Text = "Prewitt poziomy";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Visible = false;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(40, 224);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(75, 46);
+            this.button35.TabIndex = 7;
+            this.button35.Text = "Sobel pionowy";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Visible = false;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(40, 276);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(75, 46);
+            this.button36.TabIndex = 8;
+            this.button36.Text = "Sobel poziomy";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Visible = false;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(40, 328);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(75, 46);
+            this.button37.TabIndex = 9;
+            this.button37.Text = "Laplace";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Visible = false;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
+            // button38
+            // 
+            this.button38.Location = new System.Drawing.Point(40, 380);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(75, 46);
+            this.button38.TabIndex = 10;
+            this.button38.Text = "Minimum";
+            this.button38.UseVisualStyleBackColor = true;
+            this.button38.Visible = false;
+            this.button38.Click += new System.EventHandler(this.button38_Click);
+            // 
+            // button39
+            // 
+            this.button39.Location = new System.Drawing.Point(40, 432);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(75, 46);
+            this.button39.TabIndex = 11;
+            this.button39.Text = "Maksimum";
+            this.button39.UseVisualStyleBackColor = true;
+            this.button39.Visible = false;
+            this.button39.Click += new System.EventHandler(this.button39_Click);
+            // 
+            // button40
+            // 
+            this.button40.Location = new System.Drawing.Point(40, 484);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(75, 46);
+            this.button40.TabIndex = 12;
+            this.button40.Text = "Mediana";
+            this.button40.UseVisualStyleBackColor = true;
+            this.button40.Visible = false;
+            this.button40.Click += new System.EventHandler(this.button40_Click);
             // 
             // Form1
             // 
@@ -679,6 +836,7 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -689,9 +847,8 @@
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -744,6 +901,18 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button31;
     }
 }
 
